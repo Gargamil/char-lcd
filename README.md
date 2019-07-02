@@ -77,3 +77,9 @@ This function treats `\n` as new line and maps UNICODE characters to the interna
 ##### font(n, data)
 `lcd.font(n, data);` - define the pixels for the `n`-th character; `data` is an array of up to 10 bytes.  
 In real hardware, only first 8 characters can be changed, but there is no such limitation in the simulator.
+
+##### roms
+`lcd.roms` gives access to roms 
+
+##### cursor(r, c)
+`lcd.cursor(r, c);` - sets cursor at row `r`, column `c`. Must be called after setting the chars.
